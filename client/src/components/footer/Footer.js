@@ -45,13 +45,13 @@ const Footer = ()=>{
 
             <div className='lastDetails absolute bottom-0 items-center justify-center flex-grow w-screen'>
                 <img src={logo} className="w-40 h-20" alt='Logo'/>
-                <div className='terms mt-6'>
+                <div className='terms lg:mt-6 mt-3'>
                     
                     <span>Conditions of use & sale &nbsp;&nbsp;&nbsp; Privacy Notice &nbsp;&nbsp;&nbsp; Interest-Based Ads</span>
                     <span>© 1996-{year},ShopElites.com,inc. or its affiliates</span>
                     
-                    <div className="image-background mt-5">
-                        <p className="text-xl font-bold">Done by Sena</p>
+                    <div className="image-background lg:mt-5 mt-2">
+                        <p className="text-xl font-bold mb-2 lg:mb-4">Done by Sena</p>
                     </div>   
                 </div>
                 

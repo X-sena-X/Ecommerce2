@@ -4,9 +4,9 @@ import Carousel from 'react-material-ui-carousel';
 
 
 const data = [
-        "https://i.imgur.com/Q93naEP.png",
+        "https://i.imgur.com/irHBbbQ.png",
         "https://i.imgur.com/NLLslba.png",
-        "https://m.media-amazon.com/images/I/71AHUyOICAL._SX3000_.jpg",
+        "https://i.imgur.com/ludSjuB.png",
         "https://i.imgur.com/coV7bFM.png"
 ]
 
