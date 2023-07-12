@@ -1,0 +1,35 @@
+.Newnav_header{
+    height:40px;
+    background-color: rgb(37,47,61);
+    position: relative;
+    top:0;
+    z-index:40;
+    align-items: center;
+    display: flex;
+    
+    
+}
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color:white;
+    margin-left:30px;
+
+}
+.nav-left_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    margin-left:10px;
+    margin-right: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}

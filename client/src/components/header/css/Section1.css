@@ -1,0 +1,107 @@
+/*
+ * Preparing stage
+*/
+
+.card_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+   * Start
+  */
+.glassBox {
+    width: 100%;
+    height: 14rem;
+    max-width: 10rem;
+    background: rgba(255, 255, 255, 0.05);
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.glassBox,
+.glassBox * {
+    box-sizing: border-box;
+    transition: 400ms;
+}
+
+.glassBox__imgBox img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.glassBox__title {
+    text-align: center;
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.glassBox__content {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    opacity: 0;;
+}
+
+.glassBox:hover .glassBox__imgBox {
+    transform: translateY(-50px);
+}
+
+.glassBox:hover .glassBox__imgBox img {
+    transform: translate(-10px, -20px) rotate(-15deg) scale(1.2);
+}
+
+/**  FOR the overlay */
+
+.desc {
+    transform: scale(0, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+.desc span {
+    font-size: 1em !important;
+    font-weight: 600;
+    text-transform: none;
+    margin-top: 0em;
+}
+
+.glassBox:hover .desc {
+    display: flex !important;
+    transform: scale(1, 1);
+
+}
+
+@media only screen and (min-width:1024px) {
+    .glassBox{
+        width: 100%;
+        height: 25rem;
+        max-width: 18.75rem;
+        padding: 15px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    }
+    .glassBox:hover .glassBox__imgBox img {
+        transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+    }
+}

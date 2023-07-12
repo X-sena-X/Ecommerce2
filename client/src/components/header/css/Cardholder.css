@@ -1,0 +1,8 @@
+.cardholder_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 4px;
+}

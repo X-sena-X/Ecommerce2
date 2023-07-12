@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+
+.line1{
+    width:75vw;
+    border:1px solid rgb(117, 106, 106);
+}
+
+
+
+
+.Cont1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 38rem;
+  max-width: 315px;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+@media only screen and (min-width:1024px){
+    .Cont1{
+        margin: 10px;
+    }
+}
+
+.Cont1 *,
+.Cont1:before,
+.Cont1:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.Cont1 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.Cont1:before,
+.Cont1:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.Cont1:before {
+  width: 0;
+  height: 1px;
+}
+
+.Cont1:after {
+  height: 0;
+  width: 1px;
+}
+
+.Cont1 div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+
+.Cont1:hover .cont1-text{
+    display: flex;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  
+.Cont1 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.Cont1:hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.Cont1:hover:before
+ {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+.Cont1:hover:after{
+    opacity: 1;
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.Cont1:hover:before {
+  width: 40px;
+}
+
+.Cont1:hover:after {
+  height: 40px;
+}
+
+
+
+
