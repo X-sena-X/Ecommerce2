@@ -1,7 +1,6 @@
-import React from 'react';
+import React,{useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import "./css/nav3.css";
-import shoplifylogo from "./shoplify-logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
@@ -9,24 +8,28 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faFilter } from '@fortawesome/free-solid-svg-icons'
 import { faX } from '@fortawesome/free-solid-svg-icons'
-
+import logo from './images/logo2.png';
 
 
 
 const Nav3 = () => {
+   //const [open,setOpen] = useState(false);
    function openNav() {
-     document.getElementById("mySidenav").style.width = "250px";
+      
+      document.getElementById("mySidenav").style.width = "250px";
    }
+         
+     
    
    function closeNav(e) {
      e.preventDefault();
      document.getElementById("mySidenav").style.transition = "1s";
-     document.getElementById("mySidenav").style.width = "0";
+     document.getElementById("mySidenav").style.width = "0 ";
    }
 
 
     return (
-      <div className='navbar-holder'>
+      <div className='navbar-holder font-RobotoSlab'>
         <div className="container">
             <div className="header_section_top">
                <div className="row">
@@ -45,11 +48,12 @@ const Nav3 = () => {
             </div>
          </div>
 
+         <div className="header_section_bottom">
          <div className="logo_section">
             <div className="container">
                <div className="row">
                   <div className="col-sm-12">
-                     <div className="logo"><a href="#"><img src={shoplifylogo} alt='Logo'/></a></div>
+                     <div className="logo"><a href="/"><img src={logo} className="w-40 h-20" alt='Logo'/></a></div>
                   </div>
                </div>
             </div>
@@ -59,7 +63,7 @@ const Nav3 = () => {
             <div className="container">
                <div className="containt_main">
                   <div id="mySidenav" className="sidenav">
-                     <a href="" className="closebtn" onclick={closeNav}><FontAwesomeIcon icon={faX} /></a>
+                     <a href="/" className="closebtn" onclick={closeNav}><FontAwesomeIcon icon={faX} /></a>
                      <a href="#">Home</a>
                      <a href="#">Fashion</a>
                      <a href="#">Electronic</a>
@@ -70,7 +74,7 @@ const Nav3 = () => {
                   </a>
                   {/* <span className="toggle_icon" onclick={openNav}><img src={toggleicon} alt='#'/></span> */}
                   <div className="dropdown all-cat">
-                     <button className="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <FontAwesomeIcon icon={faFilter} /> Filters
+                     <button className="btn btn-secondary text-black hover:text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > <FontAwesomeIcon icon={faFilter} /> Filters
                      </button>
                      <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a className="dropdown-item" href="#">Action</a>
@@ -91,13 +95,13 @@ const Nav3 = () => {
                   <div className="header_box">
                      <div className="login_menu">
                         <ul>
-                           <li><a href="#">
-                              <FontAwesomeIcon icon={faCartShopping} />
-                              <span className="padding_10">Cart</span></a>
+                           <li><a href="#" className='hover:text-blue-800'>
+                              <FontAwesomeIcon icon={faCartShopping} className='text-black '/>
+                              <span className="padding_10 text-black">Cart</span></a>
                            </li>
-                           <li><a href="#">
-                              <FontAwesomeIcon icon={faUser} />   
-                              <span className="padding_10">Profile</span></a>
+                           <li><a href="#" className='hover:text-blue-800'>
+                              <FontAwesomeIcon icon={faUser} className='text-black'/>   
+                              <span className="padding_10 text-black">Profile</span></a>
                            </li>
                         </ul>
                      </div>
@@ -105,7 +109,7 @@ const Nav3 = () => {
                </div>
             </div>
          </div>
-
+         </div>
       </div>
     );
 };

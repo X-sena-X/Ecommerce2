@@ -1,9 +1,6 @@
 /* header top section start */
 .navbar-holder {
     height: 200px;
-    /* position: absolute;
-    z-index: 999;
-    width: 100%; */ 
 }
 
 .header_section_top {
@@ -13,6 +10,7 @@
     clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
     height: auto;
     padding: 10px 0px;
+    z-index: 999;
 }
 
 .custom_menu {
@@ -150,14 +148,12 @@
 }
 
 .btn-secondary {
-    color: #000000;
     background-color: #30302e;
     border-color: #30302e;
 }
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #30302e;
+    background-color: #2565EB;
     border-color: #30302e;
 }
 
@@ -225,7 +221,7 @@
 }
 
 .login_menu li a {
-    color: #000000;
+    color: white
 }
 
 .login_menu li a:hover {

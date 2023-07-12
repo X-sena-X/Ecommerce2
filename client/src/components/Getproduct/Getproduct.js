@@ -45,7 +45,7 @@ const Cart = () => {
                         </div>
                     </div>
                     <div className="right_cart">
-                        <h3>{inddata.title.shortTitle}</h3>
+                        <h3 >{inddata.title.shortTitle}</h3>
                         <h4>{inddata.title.longTitle} </h4>
                         <Divider />
                         <p className="mrp">M.R.P. : ${inddata.price.mrp}</p>

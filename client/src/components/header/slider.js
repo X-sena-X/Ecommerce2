@@ -23,7 +23,7 @@ const responsive = {
 
 const slide = ({ title, products }) => {
   return (
-    <div className="products_section h-auto bg-white flex flex-col my-6 mx-4 rounded-2xl">
+    <div className="products_section h-auto bg-white flex flex-col my-6 mx-4 rounded-2xl font-RobotoSlab">
       <div className="products_deal relative flex items-center justify-between my-4">
         <span className="lg:text-3xl  text-xl font-bold ml-4">{title}</span>
         <button className="view_btn absolute right-0 text-white bg-blue-800 border px-2 py-1 rounded-md lg:mr-10 mr-4">
@@ -59,8 +59,8 @@ const slide = ({ title, products }) => {
                     className="fit-content"
                   />
                 </div>
-                <p className="products_name lg:text-xl text-sm lg:font-bold ">{e.title.shortTitle}</p>
-                <p className="products_offer text-sm hidden lg:visible md:visible">{e.discount}</p>
+                <p className="products_name lg:text-xl text-sm lg:font-bold font-Lato">{e.title.shortTitle}</p>
+                <p className="products_offer text-sm hidden lg:visible md:visible font-Lato">{e.discount}</p>
               </div>
             </NavLink>
           );

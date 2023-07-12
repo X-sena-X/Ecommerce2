@@ -5,7 +5,7 @@ import image3 from './images/shoe_yellow.png';
 export default function Section1({ title, productName, price }) {
     return (
         <>
-            <div className="Section1_container flex flex-col items-center justify-center lg:mt-20 mt-14 ">
+            <div className="Section1_container flex flex-col items-center justify-center lg:mt-20 mt-14 font-RobotoSlab">
                 <div className='flex my-5'>
                     <span className='text-6xl font-bold'>New Arrivals</span>
                 </div>

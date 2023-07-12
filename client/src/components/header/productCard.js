@@ -5,7 +5,7 @@ import './css/productsCard.css';
 function product_card({title,products}){
     let j=0;
     return(
-        <div className="product_container mb-3 lg:mb-0">
+        <div className="product_container mb-3 lg:mb-0 font-Lato">
             <div className='productcard_title'>{title}</div>
             <div className='product '>
                 {

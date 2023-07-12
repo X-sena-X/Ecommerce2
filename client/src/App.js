@@ -18,8 +18,8 @@ function App() {
             <Route path='/login' element={<><SignIn/></>}/>
             <Route path='/signup' element={<><SignUp/></>}/>
             <Route path="/" element={<><Nav3/><Home/></>}/>
-            <Route path='/getproduct/:id' element={<><Navbar/><Newnav/><Getproduct/><Footer/></>}/>
-            <Route path='/cart' element={<><Navbar/><Newnav/><Cart/><Footer/></>}/>
+            <Route path='/getproduct/:id' element={<><Nav3/><Getproduct/><Footer/></>}/>
+            <Route path='/cart' element={<><Nav3/><Cart/><Footer/></>}/>
           </Routes>
         </div>
   );
