@@ -7,8 +7,8 @@ import image1 from './images/image3edit.png';
 import image6 from './images/image5.png';
 export default function Section3() {
     return (
-        <div className='section3 grid lg:grid-cols-2 mt-32 grid-cols-1 w-screen h-auto bg-white font-RobotoSlab'>
-            <div className='leftSide flex flex-col bg-gray-200 items-center justify-center'>
+        <div className='section3 grid lg:grid-cols-2 mt-32 grid-cols-1 w-screen h-auto bg-white py-2 font-RobotoSlab'>
+            <div className='leftSide flex flex-col bg-white items-center justify-center'>
                 <div className='Container1 relative flex h-52 rounded-3xl bg-white mx-5 my-2 items-center justify-center'>
                     <div className='absolute w-full h-full overflow-hidden '>
                         <img src={image1} className="img_scale h-full w-full object-cover rounded-2xl  "alt="banner1"/>
