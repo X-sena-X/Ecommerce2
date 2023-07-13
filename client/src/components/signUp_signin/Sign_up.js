@@ -28,7 +28,7 @@ const Sign_Up = ()=>{
         e.preventDefault()
         const {name,Intcode,mobile,email,password} = udata;
         // changed for deployment "/signup"
-        const res = await fetch("https://server-zmuv.onrender.com/signup",{
+        const res = await fetch("https://shopelites-server.vercel.app/signup",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

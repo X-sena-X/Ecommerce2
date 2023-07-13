@@ -26,7 +26,7 @@ const Sign_in = ()=>{
         e.preventDefault();
         const {email,password} = logdata;
         // changed for deplyment "/login"
-        const res = await fetch("https://server-zmuv.onrender.com/login",{
+        const res = await fetch("https://shopelites-server.vercel.app/login",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
