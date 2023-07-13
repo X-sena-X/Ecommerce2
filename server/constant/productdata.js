@@ -25,8 +25,8 @@ const products = [
             longTitle: ''
         },
         price: {
-            mrp: 1499,
-            cost: 899,
+            mrp: 2399,
+            cost: 1899,
             discount: '40%'
         },
         description: 'This non-stick sandwich toaster .easy to use and very handy. Directly hold over flame to make tasty toasts and toasted sandwiches. Specially designed by keeping your needs in mind, the sandwich maker makes whatever youre doing simpler, smarter and better',
