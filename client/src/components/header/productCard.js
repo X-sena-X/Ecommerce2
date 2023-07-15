@@ -24,7 +24,11 @@ function product_card({title,products}){
                         }
                         else{
                             return(
-                                <div></div>
+                                <>
+                                    <div>PRODUCT SOLD OUT.....</div>
+                                    <a href="/"> continue shopping</a>
+                                </>
+                                
                             )
                         }
                         
