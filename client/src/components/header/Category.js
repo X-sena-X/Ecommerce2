@@ -2,14 +2,20 @@ import './css/Category.css';
 import image1 from './images/fashion2.jpg';
 import image2 from './images/footwear.jpg'
 import image3 from './images/electronics.jpg'
+import { useNavigate } from 'react-router-dom';
 export default function Category() {
+    const navigate = useNavigate();
+
+    const goTosoon = () => {
+        navigate('/soon'); // Replace '/otherpage' with the path of the page you want to navigate to
+    };
     return (
         <>
             <div className="Category_container flex flex-col items-center justify-center my-40">
                 <span className="flex  lg:text-5xl text-3xl font-bold font-RobotoSlab">Shop By category</span>
                 <span className='line1 my-4'></span>
                 <div className="grid grid-cols-3 gap-6">
-                    <div className="Category_card h-fit flex flex-col w-auto p-2 bg-white ">
+                    <div className="Category_card h-fit flex flex-col w-auto p-2 bg-white " onClick={goTosoon}>
                         <div className="relative">
                             <div className="Cont1 h-40 lg:h-auto">
                                 <img src={image1} alt="Category" className='object-fill'/>
@@ -24,7 +30,7 @@ export default function Category() {
                             <span className='text-2xl font-bold font-RobotoSlab'>Clothing</span>
                         </div>
                     </div>
-                    <div className="Category_card h-auto flex flex-col w-auto p-2 bg-white">
+                    <div className="Category_card h-auto flex flex-col w-auto p-2 bg-white " onClick={goTosoon}>
                         <div id="" className="relative">
                             <div className="Cont1 h-40 lg:h-auto">
                                 <img src={image3} alt="Category" />
@@ -39,7 +45,7 @@ export default function Category() {
                             <span className='text-2xl font-bold font-RobotoSlab'>Electronics</span>
                         </div>
                     </div>
-                    <div className="Category_card h-auto flex flex-col w-auto p-2 bg-white">
+                    <div className="Category_card h-auto flex flex-col w-auto p-2 bg-white" onClick={goTosoon}>
                         <div id="" className="relative">
                             <div className="Cont1 h-40 lg:h-auto">
                                 <img src={image2} alt="Category" />
