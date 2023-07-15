@@ -62,11 +62,14 @@ const Cart = () => {
                 </div>
             }
             {/*
-            {!inddata ? <div className="circle">
-                <CircularProgress />
-                <h2> Loading....</h2>
+            {!inddata &&
+                <div>
+                    <div>PRODUCT SOLD OUT.....</div>
+                    <a href="/"> continue shopping</a>
+                
             </div> : ""}
-            */}
+            */
+            }
         </div>
   )
 }
