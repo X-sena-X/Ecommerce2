@@ -1,5 +1,5 @@
 
-// we store all teh data into a blank array
+// we store all the data into a blank array
 const products = [];
 
 export const getProductsReducers = (state={products},action)=>{

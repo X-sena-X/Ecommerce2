@@ -9,6 +9,7 @@ import {Routes,Route} from "react-router-dom";
 import Getproduct from './components/Getproduct/Getproduct';
 import Footer from './components/footer/Footer';
 import Cart  from './components/cart/cart';
+import ComingSoon from './components/ComingSoon/SoonPage';
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
             <Route path="/" element={<><Nav3/><Home/></>}/>
             <Route path='/getproduct/:id' element={<><Nav3/><Getproduct/><Footer/></>}/>
             <Route path='/cart' element={<><Nav3/><Cart/><Footer/></>}/>
+            <Route path="/soon" element={<><ComingSoon/></>}/>
           </Routes>
+
         </div>
   );
 

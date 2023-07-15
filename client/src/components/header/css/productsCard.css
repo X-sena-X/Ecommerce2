@@ -24,9 +24,7 @@
 .product{
     height:18rem;
     width:20rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
 }
 .product_items{
     position: relative;

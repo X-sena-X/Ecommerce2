@@ -5,7 +5,16 @@ import image3 from './images/image4.png'
 import image2 from './images/image2.png';
 import image1 from './images/image3edit.png';
 import image6 from './images/image5.png';
+import { useNavigate } from 'react-router-dom';
+
 export default function Section3() {
+    const navigate = useNavigate();
+
+    const goTosoon = () => {
+        navigate('/soon'); // Replace '/otherpage' with the path of the page you want to navigate to
+    };
+
+
     return (
         <div className='section3 grid lg:grid-cols-2 mt-32 grid-cols-1 w-screen h-auto bg-white py-2 font-RobotoSlab'>
             <div className='leftSide flex flex-col bg-white items-center justify-center'>
@@ -15,7 +24,7 @@ export default function Section3() {
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <span className='text-black font-bold text-2xl z-10 '>GET UPTO 50% OFF</span>
-                        <button className='w-32 h-10 bg-gray-100 rounded-xl text-sm mt-4 z-10 hover:bg-blue-600 hover:text-white'>Get Discount</button>
+                        <button onClick={goTosoon} className='w-32 h-10 bg-gray-100 rounded-xl text-sm mt-4 z-10 hover:bg-blue-600 hover:text-white'>Get Discount</button>
                     </div>
 
                 </div>
@@ -48,7 +57,7 @@ export default function Section3() {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                             </svg>
                         </div>
-                        <button className='h-8 lg:w-18 absolute bottom-0 mb-8 opacity-60 bg-transparent rounded-xl border-black border-2 text-sm px-3 hover:bg-blue-600 hover:text-blue-800'>Avail Offers</button>
+                        <button onClick={goTosoon} className='h-8 lg:w-18 absolute bottom-0 mb-8 opacity-60 bg-transparent rounded-xl border-black border-2 text-sm px-3 hover:bg-blue-600 hover:text-blue-800' >Avail Offers</button>
                     </div>
                     <div className='Container4 flex relative h-44 w-44 lg:h-64 lg:w-64 rounded-3xl'>
                         <div className='absolute flex right-0 top-0 mt-2 mr-2 bg-white w-8 h-8 rounded-full text-center justify-center items-center'>

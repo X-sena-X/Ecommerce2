@@ -12,7 +12,7 @@ import Banner2 from '../images/shoe_banner.png';
 import Category from '../components/header/Category';
 import image1 from '../components/header/images/samsung.png';
 import Banner3 from '../images/fashion_banner.png';
-
+import { useNavigate } from 'react-router-dom';
 // useselector to get data into component
 
 var StyleForCardHolder ={
@@ -21,6 +21,11 @@ var StyleForCardHolder ={
 }
 
 const Home = ()=>{
+    const navigate = useNavigate();
+
+  const goTosoon = () => {
+    navigate('/soon'); // Replace '/otherpage' with the path of the page you want to navigate to
+  };
 
     const {products}  = useSelector(state=> state.getproductsdata);
     //console.log(products);
@@ -61,7 +66,7 @@ const Home = ()=>{
             </div>
             <div className='w-screen relative flex bg-blue-100 my-8'>
                 <img className='object-cover shoeBanner' src={Banner2}/>
-                <button className='absolute lg:h-14 h-6 lg:w-28 w-16 bottom-0 left-0 lg:ml-72 ml-16 lg:mb-36 mb-14 hover:opacity-80 text-black  bg-yellow-400 lg:rounded-2xl rounded-lg text-sm lg:text-md'>Buy Now</button>
+                <button onClick={goTosoon} className='absolute lg:h-14 h-6 lg:w-28 w-16 bottom-0 left-0 lg:ml-72 ml-16 lg:mb-36 mb-14 hover:opacity-80 text-black  bg-yellow-400 lg:rounded-2xl rounded-lg text-sm lg:text-md'>Buy Now</button>
             </div>
             <Section1/>
             <div className='w-screen relative  bg-blue-100 my-8 lg:flex hidden'>
