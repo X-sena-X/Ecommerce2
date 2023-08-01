@@ -3,7 +3,7 @@ const productsdata2 = require("./constant/productdata2");
 
 // here we compare the schema and data to give the input for database
 
-const DefaultData = async()=>{
+const DefaultData2 = async()=>{
     try{
         // we do this becoz the data is added each time the app is runned 
         await Products2.deleteMany({});

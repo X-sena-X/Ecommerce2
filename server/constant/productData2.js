@@ -1,4 +1,4 @@
-const products = [
+const products2 = [
     {
         id: 'AZ10001',
         category: 'footwear',
@@ -7,7 +7,7 @@ const products = [
             url1: 'https://i.imgur.com/1uqCvnK.png',
             url2: 'https://i.imgur.com/gfhIrWJ.png',
             url3: 'https://i.imgur.com/b6T9sFn.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Nike Jordan Air ',
@@ -25,7 +25,7 @@ const products = [
             url1: 'https://i.imgur.com/gawSeaW.png',
             url2: 'https://i.imgur.com/bbkPREr.png',
             url3: 'https://i.imgur.com/fGxquCl.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Air Jordan 1',
@@ -43,7 +43,7 @@ const products = [
             url1: 'https://i.imgur.com/LuE088N.png',
             url2: 'https://i.imgur.com/rCFMeEV.png',
             url3: 'https://i.imgur.com/s8N6gee.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Nike jordan',
@@ -61,7 +61,7 @@ const products = [
             url1: 'https://i.imgur.com/dBIetyW.png',
             url2: 'https://i.imgur.com/HhW5mQq.png',
             url3: 'https://i.imgur.com/k5WE46t.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Air Jordan 1 Retro High',
@@ -79,7 +79,7 @@ const products = [
             url1: 'https://i.imgur.com/LvHb8NP.png',
             url2: 'https://i.imgur.com/Rx9MSBp.png',
             url3: 'https://i.imgur.com/k1A7gRm.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Air Jordan 1 Mid SE ',
@@ -97,7 +97,7 @@ const products = [
             url1: 'https://i.imgur.com/QYRtWXN.png',
             url2: 'https://i.imgur.com/ZnQuwMB.png',
             url3: '',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Air Jordan 13',
@@ -115,7 +115,7 @@ const products = [
             url1: 'https://i.imgur.com/vqjT7jH.png',
             url2: 'https://i.imgur.com/hKCH2Zt.png',
             url3: 'https://i.imgur.com/9Q4723b.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Air Jordan 1 Mid',
@@ -133,7 +133,7 @@ const products = [
             url1: 'https://i.imgur.com/B9rZnXE.png',
             url2: 'https://i.imgur.com/waWftVs.png',
             url3: 'https://i.imgur.com/1HdbIs7.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Puma',
@@ -151,7 +151,7 @@ const products = [
             url1: 'https://i.imgur.com/wEhIZhu.png',
             url2: 'https://i.imgur.com/erSmWA4.png',
             url3: '',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'PUMA',
@@ -169,7 +169,7 @@ const products = [
             url1: 'https://i.imgur.com/WZazrXS.png',
             url2: 'https://i.imgur.com/SHzjiyt.png',
             url3: 'https://i.imgur.com/iAp5lcb.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'PUMA ',
@@ -187,7 +187,7 @@ const products = [
             url1: 'https://i.imgur.com/xsRLs7N.png',
             url2: 'https://i.imgur.com/OACBvVh.png',
             url3: 'https://i.imgur.com/lYSP07K.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'PUMA',
@@ -205,7 +205,7 @@ const products = [
             url1: 'https://i.imgur.com/b3NkZ1O.png',
             url2: 'https://i.imgur.com/DJncgfT.png',
             url3: 'https://i.imgur.com/BR9v4w6.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'PUMA',
@@ -223,7 +223,7 @@ const products = [
             url1: 'https://i.imgur.com/gAegqFG.png',
             url2: 'https://i.imgur.com/1zusxSd.png',
             url3: 'https://i.imgur.com/fzThSF0.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'Puma',
@@ -241,7 +241,7 @@ const products = [
             url1: 'https://i.imgur.com/ICULELH.png',
             url2: 'https://i.imgur.com/Haa1A0m.png',
             url3: 'https://i.imgur.com/L1HAkSU.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'adidas',
@@ -259,7 +259,7 @@ const products = [
             url1: 'https://i.imgur.com/wcMZCIS.png',
             url2: 'https://i.imgur.com/biHmAJQ.png',
             url3: 'https://i.imgur.com/peWQX6W.png',
-            url4: ''
+            
         },
         title:{
             shortTitle: 'adidas',
@@ -275,7 +275,8 @@ const products = [
         mainUrl: 'https://i.imgur.com/UfqBfe0.png',
         images: {
             url1: 'https://i.imgur.com/493bAsS.png',
-            
+            url2:'',
+            url3:''
         },
         title:{
             shortTitle: 'Adidas',
@@ -308,3 +309,5 @@ const products = [
         tagline:''
     },
 */
+
+module.exports = products2;

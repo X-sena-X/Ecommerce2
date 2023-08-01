@@ -3,7 +3,7 @@ const router = new express.Router();
 const Products = require("../models/productsScheme");
 const USER = require("../models/userSchema");
 const bcrypt = require("bcryptjs");
-const Products2 = require("../models/productsSchema2");
+const Products2 = require("../models/productsScheme2");
 
 // to get the product data api from mongoose;  
 router.get("/getproducts",async(req,res)=>{

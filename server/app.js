@@ -20,7 +20,7 @@ app.listen(port,()=>{
 });
 
 DefaultData2();
-DefaultData()
+DefaultData();
 //backend timeline 2:47:00
 // we use cors becoz when sending data from server to frontend where frontend in port 3000 and backend in port 8000 we will 
 // get an error known as cross origin platform. so we use cors module
