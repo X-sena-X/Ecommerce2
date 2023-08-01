@@ -11,18 +11,17 @@ const productsUrl  = new mongoose.Schema({
 const productsScheme = new mongoose.Schema({
     id:String,
     category:String,
-    url:String,
-    detailUrl:[productsUrl],
+    mainUrl:String,
+    images:[productsUrl],
     title:Object,
     price:Object,
     description:String,
-    discount:String,
     tagline:String
 
 });
 
 // here we are creating the models
 // the arguments are the (the name of  collection that we give in mongoose atlas, the schema name)
-const Products2 = new mongoose.model("products",productsScheme); 
+const Products2 = new mongoose.model("products2",productsScheme); 
 
 module.exports = Products2;

@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         'RobotoSlab': ['Roboto Slab', 'serif'],
         'Lato' : ['Lato', 'sans-serif']
+      },
+      height:{
+        'h-104': ['32rem']
       }
     },
     

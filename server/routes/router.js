@@ -3,6 +3,7 @@ const router = new express.Router();
 const Products = require("../models/productsScheme");
 const USER = require("../models/userSchema");
 const bcrypt = require("bcryptjs");
+const Products2 = require("../models/productsSchema2");
 
 // to get the product data api from mongoose;  
 router.get("/getproducts",async(req,res)=>{
@@ -12,6 +13,17 @@ router.get("/getproducts",async(req,res)=>{
         const productsdata = await Products.find();
         //console.log("console data"+productsdata);
         res.status(201).json(productsdata);
+    }catch(e){
+        console.log("error:"+e.message);
+    }
+})
+
+router.get("/getproducts2",async(req,res)=>{
+    try{
+        // find method to find ur data inside the database
+        const productsdata2 = await Products2.find();
+        //console.log("console data"+productsdata);
+        res.status(201).json(productsdata2);
     }catch(e){
         console.log("error:"+e.message);
     }
@@ -90,6 +102,7 @@ router.post("/login",async(req,res)=>{
         res.status(422).json({error:"invalid details "})
     }
 })
+
 
 module.exports = router;
 // we use this to create the routes for your api

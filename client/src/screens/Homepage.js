@@ -65,12 +65,12 @@ const Home = ()=>{
                 </div>
             </div>
             <div className='w-screen relative flex bg-blue-100 my-8'>
-                <img className='object-cover shoeBanner' src={Banner2}/>
+                <img className='object-cover shoeBanner' src={Banner2} alt="banner"/>
                 <button onClick={goTosoon} className='absolute lg:h-14 h-6 lg:w-28 w-16 bottom-0 left-0 lg:ml-72 ml-16 lg:mb-36 mb-14 hover:opacity-80 text-black  bg-yellow-400 lg:rounded-2xl rounded-lg text-sm lg:text-md'>Buy Now</button>
             </div>
             <Section1/>
             <div className='w-screen relative  bg-blue-100 my-8 lg:flex hidden'>
-                <img className='object-cover shoeBanner' src={Banner3}/>
+                <img className='object-cover shoeBanner' src={Banner3} alt="banner"/>
             </div>
             <Section3/>
             

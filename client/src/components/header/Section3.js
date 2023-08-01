@@ -6,6 +6,8 @@ import image2 from './images/image2.png';
 import image1 from './images/image3edit.png';
 import image6 from './images/image5.png';
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../cart/CartContext';
 
 export default function Section3() {
     const navigate = useNavigate();
@@ -13,7 +15,7 @@ export default function Section3() {
     const goTosoon = () => {
         navigate('/soon'); // Replace '/otherpage' with the path of the page you want to navigate to
     };
-
+    const {addProducts} = useContext(CartContext);
 
     return (
         <div className='section3 grid lg:grid-cols-2 mt-32 grid-cols-1 w-screen h-auto bg-white py-2 font-RobotoSlab'>
@@ -83,7 +85,6 @@ export default function Section3() {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 justify-self-center hover:fill-red-600">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                             </svg>
-
                         </div>
                         <div className='absolute bottom-0 flex flex-row mb-5 ml-4 justify-evenly'>
                             <div className='flex flex-col justify-start '>
@@ -91,7 +92,7 @@ export default function Section3() {
                                 <span className='font-bold flex text-md whitespace-nowrap'>Supper Skinny</span>
                                 <span className='font-bold flex text-md whitespace-nowrap'>Jogger in Brown</span>
                             </div>
-                            <button className='h-8 w-14 lg:ml-20 ml-16 rounded-3xl bg-blue-600 text-sm text-white'>$39</button>
+                            <button className='h-8 w-14 lg:ml-20 ml-16 rounded-3xl bg-blue-600 text-sm text-white' onClick={addProducts}>$39</button>
                         </div>
 
 
@@ -117,7 +118,7 @@ export default function Section3() {
                                 <span className='font-bold text-md flex text whitespace-nowrap text-white'>WMX Rubeer</span>
                                 <span className='font-bold text-md flex whitespace-nowrap text-white'>Zebra sandal</span>
                             </div>
-                            <button className='h-8 w-14 lg:ml-28 ml-24 rounded-3xl bg-blue-600 text-sm text-white'>$39</button>
+                            <button className='h-8 w-14 lg:ml-28 ml-24 rounded-3xl bg-blue-600 text-sm text-white' onClick={addProducts}>$39</button>
                         </div>
                     </div>
 
