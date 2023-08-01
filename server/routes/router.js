@@ -16,7 +16,8 @@ router.get("/getproducts",async(req,res)=>{
         console.log("error:"+e.message);
     }
 })
-/*
+
+
 router.get("/getproducts2",async(req,res)=>{
     try{
         // find method to find ur data inside the database
@@ -27,7 +28,8 @@ router.get("/getproducts2",async(req,res)=>{
         console.log("error:"+e.message);
     }
 })
-*/
+
+
 // to get individual data for products to get a dynamic url
 
 router.get("/getproduct/:id",async(req,res)=>{
