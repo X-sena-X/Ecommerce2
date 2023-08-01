@@ -5,7 +5,7 @@
 export const getProducts = ()=> async(dispatch)=>{
   try{
     // changes for deployment before "getproducts"
-    const data = await fetch("https://shopelites-server.vercel.app/getproducts",{
+    const data = await fetch("https://server-zmuv.onrender.com/getproducts",{
         method:"GET",
         headers:{
             "Content-Type":"application/json"
