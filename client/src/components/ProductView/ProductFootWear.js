@@ -28,7 +28,7 @@ export default function ProductFoot() {
 
     const getInddata = async () => {
         // changed for deployment "/getproducts"
-        const res = await fetch(`https://server-zmuv.onrender.com/getproduct2/${id}`, {
+        const res = await fetch(`${process.env.SERVER_URL}/getproduct2/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

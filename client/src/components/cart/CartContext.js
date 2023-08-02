@@ -14,7 +14,7 @@ export default function CartContextProvider ({children}){
     })
     const getInddata = async (id) => {
         // changed for deployment "/getproducts"
-        const res = await fetch(`https://server-zmuv.onrender.com/getproduct2/${id}`, {
+        const res = await fetch(`${process.env.SERVER_URL}/getproduct2/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

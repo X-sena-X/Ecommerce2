@@ -11,7 +11,7 @@ export default function FootWearPage() {
     const [inddata, setInddata] = useState([]);
     const getInddata = async () => {
         // changed for deployment "/getproducts"
-        const res = await fetch(`https://server-zmuv.onrender.com/getproducts2`, {
+        const res = await fetch(`${process.env.SERVER_URL}/getproducts2`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

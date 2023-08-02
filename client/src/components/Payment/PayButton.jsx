@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const PayButton = (cartItems) => {
     const handleCheckout = () => {
-        axios.post(`http://localhost:8000/create-checkout-session`,
+        axios.post(`${process.env.SERVER_URL}/create-checkout-session`,
             cartItems
         ).then((res)=>{
             if(res.data.url){
