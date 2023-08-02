@@ -27,8 +27,8 @@ router.post('/create-checkout-session', async(req, res) =>{
     const session = await stripe.checkout.sessions.create({
         line_items,
         mode: 'payment',
-        success_url: `http://localhost:3000/checkout-success`,
-        cancel_url: `http://localhost:3000/cart`,
+        success_url: `https://shoplify-gold.vercel.app/checkout-success`,
+        cancel_url: `https://shoplify-gold.vercel.app/cart`,
     });
     res.send({url:session.url});
 });
