@@ -8,10 +8,13 @@ const Products = require('./models/productsScheme');
 const DefaultData = require("./defaultdata");
 const cors = require("cors");
 const router = require("./routes/router");
+const stripe = require('./routes/stripe');
 const DefaultData2 = require("./defaultData2");
+
 app.use(express.json());
 app.use(cors());
 app.use(router);
+app.use(stripe);
 
 const port = 8000;
 

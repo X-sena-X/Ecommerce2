@@ -46,6 +46,20 @@ router.get("/getproduct/:id",async(req,res)=>{
     }
 });
 
+router.get("/getproduct2/:id",async(req,res)=>{
+    try{
+        const {id} = req.params;
+        //console.log(id);
+        const individualdata = await Products2.findOne({id:id}) // here the id requested and the product id that we get from the server is comapred
+        
+        //console.log(individualdata);
+        res.status(201).json(individualdata);
+    }catch(e){
+        res.status(401).json(individualdata);
+        console.log("error: "+e.message);
+    }
+});
+
 // register data of user
 
 router.post("/signup",async(req,res)=>{

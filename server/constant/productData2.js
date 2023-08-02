@@ -13,7 +13,7 @@ const products2 = [
             shortTitle: 'Nike Jordan Air ',
             longTitle: 'Air Jordan 1 Mid Hyper Royal'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -29,9 +29,9 @@ const products2 = [
         },
         title:{
             shortTitle: 'Air Jordan 1',
-            longTitle: 'Air Jordan 1 Retro High OG Patent Bred 555088-063'
+            longTitle: 'Air Jordan 1 Retro High OG Patent Bred '
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -49,7 +49,7 @@ const products2 = [
             shortTitle: 'Nike jordan',
             longTitle: 'Spiderman'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -65,9 +65,9 @@ const products2 = [
         },
         title:{
             shortTitle: 'Air Jordan 1 Retro High',
-            longTitle: 'Air Jordan 1 Retro High OG ‘University Blue’ 555088-134'
+            longTitle: 'Air Jordan 1 Retro High OG ‘University Blue’ '
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -85,7 +85,7 @@ const products2 = [
             shortTitle: 'Air Jordan 1 Mid SE ',
             longTitle: 'Air Jordan 1 Mid SE PS `Diamond` '
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -101,9 +101,9 @@ const products2 = [
         },
         title:{
             shortTitle: 'Air Jordan 13',
-            longTitle: 'Air Jordan 13 Retro Black University Red Flint Grey White DJ5982-060'
+            longTitle: 'Air Jordan 13 Retro Black University Red Flint Grey White'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -121,7 +121,7 @@ const products2 = [
             shortTitle: 'Air Jordan 1 Mid',
             longTitle: 'Air Jordan 1 Mid WMNS “Light Violet”'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -139,7 +139,7 @@ const products2 = [
             shortTitle: 'Puma',
             longTitle: 'RS-X Tracks'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -155,9 +155,9 @@ const products2 = [
         },
         title:{
             shortTitle: 'PUMA',
-            longTitle: 'PUMA Slipstream Low Retro Teams Yellow Blue 387207-02'
+            longTitle: 'PUMA Slipstream Low Retro Teams Yellow Blue '
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -175,7 +175,7 @@ const products2 = [
             shortTitle: 'PUMA ',
             longTitle: ' PUMA MB.01 Queen City 376886-10'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -191,9 +191,9 @@ const products2 = [
         },
         title:{
             shortTitle: 'PUMA',
-            longTitle: 'PUMA RS-X Toys Bonnie Blue 369449-08'
+            longTitle: 'PUMA RS-X Toys Bonnie Blue '
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -209,9 +209,9 @@ const products2 = [
         },
         title:{
             shortTitle: 'PUMA',
-            longTitle: 'Puma RS-X Millennium 373236-03'
+            longTitle: 'Puma RS-X Millennium '
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -227,9 +227,9 @@ const products2 = [
         },
         title:{
             shortTitle: 'Puma',
-            longTitle: 'Puma Explore Nitro GTX 378024-01'
+            longTitle: 'Puma Explore Nitro GTX '
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -247,7 +247,7 @@ const products2 = [
             shortTitle: 'adidas',
             longTitle: 'adidas Dame 8 Battle Of The Bubble GY2770'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -265,7 +265,7 @@ const products2 = [
             shortTitle: 'adidas',
             longTitle: 'adidas Pro Bounce 2018 BLACK Basketball'
         },
-        price: '$129',
+        price: '129',
         description:'',
         tagline:''
     },
@@ -282,7 +282,41 @@ const products2 = [
             shortTitle: 'Adidas',
             longTitle: 'ADIDAS CLIMACOOL VENTO 3'
         },
-        price: '$129',
+        price: '129',
+        description:'',
+        tagline:''
+    },
+    {
+        id: 'AZ10017',
+        category: 'clothing',
+        mainUrl: 'https://i.imgur.com/JkSmEG2.png',
+        images: {
+            url1: 'https://i.imgur.com/JkSmEG2.png',
+            url2:'',
+            url3:''
+        },
+        title:{
+            shortTitle: 'Jogger',
+            longTitle: 'Skinny Brown Jogger'
+        },
+        price: '29',
+        description:'',
+        tagline:''
+    },
+    {
+        id: 'AZ10018',
+        category: 'clothing',
+        mainUrl: 'https://i.imgur.com/hbn441i.png',
+        images: {
+            url1: 'https://i.imgur.com/hbn441i.png',
+            url2:'',
+            url3:''
+        },
+        title:{
+            shortTitle: 'Leather Jacket',
+            longTitle: 'Pattern Leather Jacket for women'
+        },
+        price: '59',
         description:'',
         tagline:''
     }

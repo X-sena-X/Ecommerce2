@@ -13,6 +13,9 @@ import FootWearPage from './components/Category/Footwearpage';
 import ProductFoot from './components/ProductView/ProductFootWear';
 import ClothingPage from './components/Category/Clothingpage';
 import CartContextProvider from './components/cart/CartContext';
+import CheckoutSuccess from './components/Payment/CheckoutSuccess';
+
+
 function App() {
   return (
     <div className="App">
@@ -25,8 +28,9 @@ function App() {
           <Route path="/" element={<><NavBar /><Home /></>} />
           <Route path='/getproduct/:id' element={<><NavBar /><Getproduct /><Footer /></>} />
           <Route path='/cart' element={<><NavBar /><Cart /></>} />
+          <Route path='/checkout-success' element={<><CheckoutSuccess/></>} />
           <Route path="/soon" element={<><ComingSoon /></>} />
-          <Route path="/footwear" element={<><NavBar /><FootWearPage /></>} />
+          <Route path="/footwear" element={<><FootWearPage /></>} />
           <Route path='/footwearproducts/:id' element={<><NavBar /><ProductFoot /><Footer /></>} />
           <Route path="/clothes" element={<><NavBar /><ClothingPage /></>} />
         </Routes>

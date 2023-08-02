@@ -4,14 +4,14 @@ import { grey } from '@mui/material/colors';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useParams } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
-
+import './Footwearpage.css';
 export default function FootWearPage() {
     const { id } = useParams("");
 
     const [inddata, setInddata] = useState([]);
     const getInddata = async () => {
         // changed for deployment "/getproducts"
-        const res = await fetch(`https://server-zmuv.onrender.com/getproducts2`, {
+        const res = await fetch(`http://localhost:8000/getproducts2`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -23,12 +23,13 @@ export default function FootWearPage() {
         if (res.status !== 201) {
             console.log("No data availabale");
         } else {
-            console.log('getdata');
+            console.log('gotdata');
         }
         setInddata(data);
     }
     useEffect(() => {
         getInddata();
+        console.log(inddata.length);
     }, [id]);
 
     const ShoeCategoryItems = [
@@ -117,23 +118,29 @@ export default function FootWearPage() {
                         </div>
                     </div>
                 </div>
-                <div className='footwearSection flex flex-grow '>
+                <div className='footwearSection flex flex-grow px-16'>
                     <div className='grid mx-4 my-4 lg:grid-cols-3 gap-4'>
-                        {Array.from({ length: numberOfCards }).map((_, index) => (
-                            <NavLink to={`/footwearproducts/${123456} `}>
-                                <div className='bg-reg-400 flex w-80 h-80 flex-col bg-green-200'>
-                                    <div className=' w-max h-52 flex'>
-                                        <img src="" alt="shoe" className='object-cover' />
-                                    </div>
-                                    <div id="Content" className='flex flex-col items-start '>
-                                        <span className='my-1'> Nike offset</span>
-                                        <span className='my-1 font-bold'> Men's Slides</span>
-                                        <span className='my-1'> 4 Colours</span>
-                                        <span className='my-1 font-bold'> $299</span>
-                                    </div>
-                                </div>
-                            </NavLink>
-                        ))}
+
+                        {inddata.map((products, index) => {
+                            if (products.category === 'footwear') {
+                                return (
+                                    <NavLink to={`/footwearproducts/${products.id} `}>
+                                        <div className='bg-reg-400 flex w-80 h-80 flex-col bg-gray-100 rounded-xl'>
+                                            <div className='w-full h-52 flex'>
+                                                <img src={products.mainUrl} alt="shoe" className='object-contain mix-blend-multiply h-full w-full shoeimage' />
+                                            </div>
+                                            <div id="Content" className='flex flex-col items-start ml-4'>
+                                                <span className='my-1'>{products.title.shortTitle}</span>
+                                                <span className='my-1 font-bold'> Men's </span>
+                                                <span className='my-1'> 4 Colours</span>
+                                                <span className='my-1 font-bold'>{products.price}</span>
+                                            </div>
+                                        </div>
+                                    </NavLink>
+                                );
+                            }
+
+                        })}
                     </div>
                 </div>
 
@@ -157,4 +164,36 @@ export default function FootWearPage() {
                                 )
                             }
                         })}
+{Array.from({ length: numberOfCards }).map((_, index) => (
+    <NavLink to={`/footwearproducts/${123456} `}>
+    <div className='bg-reg-400 flex w-80 h-80 flex-col bg-green-200'>
+        <div className=' w-max h-52 flex'>
+            <img src="" alt="shoe" className='object-cover' />
+        </div>
+        <div id="Content" className='flex flex-col items-start '>
+            <span className='my-1'> Nike offset</span>
+            <span className='my-1 font-bold'> Men's Slides</span>
+            <span className='my-1'> 4 Colours</span>
+            <span className='my-1 font-bold'> $299</span>
+        </div>
+    </div>
+</NavLink>
+))}
+
+
+ (
+                            <NavLink to={`/footwearproducts/${products.id} `}>
+                                <div className='bg-reg-400 flex w-80 h-80 flex-col bg-gray-100 rounded-xl'>
+                                    <div className='w-full h-52 flex'>
+                                        <img src={products.mainUrl} alt="shoe" className='object-contain mix-blend-multiply h-full w-full shoeimage'/>
+                                    </div>
+                                    <div id="Content" className='flex flex-col items-start ml-4'>
+                                        <span className='my-1'>{products.title.shortTitle}</span>
+                                        <span className='my-1 font-bold'> Men's </span>
+                                        <span className='my-1'> 4 Colours</span>
+                                        <span className='my-1 font-bold'>{products.price}</span>
+                                    </div>
+                                </div>
+                            </NavLink>
+                        ))
 */

@@ -12,9 +12,44 @@ export default function CartContextProvider ({children}){
             localStorage.setItem('cart',JSON.stringify(cartProducts));
         }
     })
-    function addProducts(productsId){
-        setCartProducts(prev=>[...prev,123]);
+    const getInddata = async (id) => {
+        // changed for deployment "/getproducts"
+        const res = await fetch(`https://server-zmuv.onrender.com/getproduct2/${id}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+
+        });
+        const data = await res.json();
+        console.log(data);
+        if (res.status !== 201) {
+            console.log("No data availabale");
+        } else {
+            console.log('getdata');
+        }
+        
+        const modifiedData = {
+            ...data,
+            quantity:1,
+            addedDate:'07022023'
+        }
+        setCartProducts(prev=>[...prev,modifiedData]);
     }
+
+    async function addProducts(productsId){
+        console.log(productsId);
+        const isItemInCart = (cartItems, itemToAdd) => {
+            return cartItems.some((cartItem) => cartItem.id === itemToAdd);
+        };
+        
+        if(! isItemInCart(cartProducts,productsId)){
+                getInddata(productsId);
+            }
+        //setCartProducts(prev=>[...prev,productsId]);
+    }
+
+   
     return(
         <CartContext.Provider value={{cartProducts,setCartProducts,addProducts}}>
             {children}

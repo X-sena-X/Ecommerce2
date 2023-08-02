@@ -17,6 +17,10 @@ export default function Section3() {
     };
     const {addProducts} = useContext(CartContext);
 
+    const productid = {
+        id1:'AZ10017',
+        id2:'AZ10018'
+    }
     return (
         <div className='section3 grid lg:grid-cols-2 mt-32 grid-cols-1 w-screen h-auto bg-white py-2 font-RobotoSlab'>
             <div className='leftSide flex flex-col bg-white items-center justify-center'>
@@ -92,7 +96,7 @@ export default function Section3() {
                                 <span className='font-bold flex text-md whitespace-nowrap'>Supper Skinny</span>
                                 <span className='font-bold flex text-md whitespace-nowrap'>Jogger in Brown</span>
                             </div>
-                            <button className='h-8 w-14 lg:ml-20 ml-16 rounded-3xl bg-blue-600 text-sm text-white' onClick={addProducts}>$39</button>
+                            <button className='h-8 w-14 lg:ml-20 ml-16 rounded-3xl bg-blue-600 text-sm text-white' onClick={()=>{addProducts(productid.id1)}}>$39</button>
                         </div>
 
 
@@ -118,7 +122,7 @@ export default function Section3() {
                                 <span className='font-bold text-md flex text whitespace-nowrap text-white'>WMX Rubeer</span>
                                 <span className='font-bold text-md flex whitespace-nowrap text-white'>Zebra sandal</span>
                             </div>
-                            <button className='h-8 w-14 lg:ml-28 ml-24 rounded-3xl bg-blue-600 text-sm text-white' onClick={addProducts}>$39</button>
+                            <button className='h-8 w-14 lg:ml-28 ml-24 rounded-3xl bg-blue-600 text-sm text-white' onClick={()=>{addProducts(productid.id2)}}>$39</button>
                         </div>
                     </div>
 
