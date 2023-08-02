@@ -1,5 +1,5 @@
 const Products2 = require('./models/productsScheme2');
-const productsdata2 = require("./constant/productdata2");
+const productsdata2 = require("./constant/productData2");
 
 // here we compare the schema and data to give the input for database
 
