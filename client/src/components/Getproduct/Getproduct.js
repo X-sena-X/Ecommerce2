@@ -10,7 +10,7 @@ const Cart = () => {
     const [inddata,setInddata] = useState([]); 
     const getInddata = async()=>{
         // changed for deployment "/getproducts"
-        const res = await fetch(`${process.env.SERVER_URL}/getproduct/${id}`,{
+        const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/getproduct/${id}`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json"

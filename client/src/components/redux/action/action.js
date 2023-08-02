@@ -5,7 +5,7 @@
 export const getProducts = ()=> async(dispatch)=>{
   try{
     // changes for deployment before "getproducts"
-    const data = await fetch(`${process.env.SERVER_URL}/getproducts`,{
+    const data = await fetch(`${process.env.REACT_APP_SERVER_URL}/getproducts`,{
         method:"GET",
         headers:{
             "Content-Type":"application/json"

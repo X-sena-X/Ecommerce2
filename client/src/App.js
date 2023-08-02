@@ -17,12 +17,13 @@ import CheckoutSuccess from './components/Payment/CheckoutSuccess';
 
 
 function App() {
+  console.log(process.env.SERVER_URL);
   return (
     <div className="App">
       <CartContextProvider>
 
         <Routes>
-
+          
           <Route path='/login' element={<><SignIn /></>} />
           <Route path='/signup' element={<><SignUp /></>} />
           <Route path="/" element={<><NavBar /><Home /></>} />
