@@ -64,7 +64,7 @@ const Cart = () => {
                                             </div>
                                             <div className='flex flex-col col-span-1 items-start '>
                                                 <span> Price</span>
-                                                <span>{product.price}</span>
+                                                <span>${product.price}</span>
                                             </div>
                                             <div className='flex col-span-2 flex-col items-start'>
                                                 <span>Quantity</span>
