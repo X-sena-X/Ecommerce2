@@ -22,7 +22,7 @@ router.get("/getproducts2",async(req,res)=>{
     try{
         // find method to find ur data inside the database
         const productsdata2 = await Products2.find();
-        //console.log("console data"+productsdata);
+        console.log("console data"+productsdata2);
         res.status(201).json(productsdata2);
     }catch(e){
         console.log("error:"+e.message);
